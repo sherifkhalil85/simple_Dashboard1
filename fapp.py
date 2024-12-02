@@ -37,5 +37,5 @@ with col3:
                      size_max=20, color='sex', title=f'correlation between total bill and tip on {time}')
     st.plotly_chart(fig,use_container_width=True)
     fig= px.sunburst(df, path=['day', 'time'], color= 'tip', 
-                    title= 'counting over day, time and size over tips'.title()).update_traces(textinfo='value')
+                    title= 'counting over day, time and size over tips'.title())
     st.plotly_chart(fig, use_container_width=True)
